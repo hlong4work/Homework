@@ -1,9 +1,19 @@
 import java.util.Arrays;
 
 
-public class Stellplatz implements Comparable<Stellplatz> {
+public class Stellplatz implements Comparable<Stellplatz>  {
     private String bezeichnung;
-    private Double flaeche;
+    private Double flaeche ;
+
+    public int compareTo(Stellplatz other) {
+        if (this.flaeche < flaeche.flaeche ) {
+            return plaetze -= 1;
+        } else if (this.flaeche > plaetze.flaeche) {
+            return plaetze +=1;
+        } else {
+            return plaetze =0;
+        }
+    }
 
     //Getters
     public String getBezeichnung() {

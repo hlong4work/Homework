@@ -1,10 +1,10 @@
 import java.util.Arrays;
 
 public class Lager {
-    private Stellplatz[] platz;
+    private Stellplatz[] plaetze ;
 
     public void sotieren(){
-        Arrays.sort(platz);
+        Arrays.sort(plaetze);
     }
     
     
@@ -21,9 +21,10 @@ public class Lager {
         Stellplatz A1 = new Stellplatz("A1", 15);
         Stellplatz B2 = new Stellplatz("B2", 10);
 
-        Stellplatz[] stellplaetze = {A2, B1, A1, B2};
-        System.out.println(sortieren(stellplaetze));
+        
+        
     }
+}
     
     
     
