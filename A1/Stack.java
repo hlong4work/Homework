@@ -1,20 +1,10 @@
+// import java.util.Arrays;
 // import java.util.Scanner;
 
 // /** A stack elements of type T. It only contains a pointer to the top.*/
 // public class Stack<T> {
-//    private Node<T> top;
-//    private int size;
-
-//    //Palindrome
-//    public static boolean Palindrom() {
-//    Scanner keyboard = new Scanner(System.in);
-//    System.out.println("Input: ");
-//    String input = keyboard.nextLine();
-//    return true; // DELETE THIS LINE WHEN WORK IN PROJECT
-
-//    }
-   
-   
+//         private Node<T> top;
+//         private int size;
 //    /** A node as an object of an inner class. */
 //    private class Node<T> {
 //       protected T data;
@@ -22,18 +12,19 @@
 //       public Node(T data, Node<T> nextNode) {
 //          this.data = data; next = nextNode;
 //       }
+
 //       public String toString() {
 //          return data.toString();
 //       }
 //    }
    
-//    /** Inserts an element into this stack.*/
+
 //    public void push(T data) {
 //       top = new Node<>(data, top);
 //       size++;
 //    }
     
-//    /** Returns the element having been input at last,and deletes it from this stack.*/
+
 //    public T pop() {
 //       if (top == null) return null; // stack is empty
 //       Node<T> node = top;
@@ -71,3 +62,4 @@
 //       System.out.println(q);       // {}
 //    }
 // }
+// // 

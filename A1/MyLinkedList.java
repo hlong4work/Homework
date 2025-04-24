@@ -13,8 +13,7 @@
 //    } else{
 //       while(head!=null){
 //       head = head.next;
-
-//          }
+//         }
 //       if (head != null){
 //          head = new Node<>(nach, head);
 //          size++;

@@ -1,0 +1,106 @@
+// /** Binärer Suchbaum von Daten. Jeder linke Kindknoten ist kleiner als
+// * sein Elternknoten, jeder rechte größer.
+// */
+// public class BinaererSuchbaum<T extends Comparable<T>> {
+//     private Node<T> wurzel;
+//     private class Node<T> {
+
+//         T daten;
+//         Node<T> links;
+//         Node<T> rechts;
+
+//         /** Erzeugt ein Blatt des Baumes.*/
+//         public Node(T daten) {
+//             this.daten = daten;
+//             this.links = null;
+//             this.rechts = null;
+//         }
+        
+//         @Override
+//         public String toString() {
+//             return daten.toString();
+//         }
+//     }
+
+//     // Augabe 3.1b 
+
+//     // End 3.1b
+
+//     public boolean einsortieren(T daten) {
+//         if (wurzel == null) {
+//             wurzel = new Node<>(daten);
+//             return true;
+//             }
+//         Node<T> node = wurzel, neu = new Node<>(daten), prev = null;
+//         while (node != null) {
+//             prev = node;
+//         if (neu.daten.compareTo(node.daten) < 0) {
+//             node = node.links;
+//             } else {
+//             node = node.rechts;
+//             }
+//         }
+//         if (neu.daten.compareTo(prev.daten) < 0) {
+//             prev.links = neu;
+//         } else {
+//             prev.rechts = neu;
+//         }
+//             return true;
+//     }
+
+//     public boolean contains(T daten) {
+//             int count = 0;
+//             if (T daten == node){
+//                 count++;
+//                 System.out.println("Search counts: "+count);
+//                 return true;
+//             } else if {
+//                 while (daten!=node){
+//                 count++;
+//                 node = node.links;
+//                     if (next.node == null){
+//                          return break;
+//                     }
+//                 }
+//                 System.out.ptintln("String already exist, search count:" + count);
+//                 return true;
+//             } else{
+//                 System.out.println("String not exist in search tree, search count:" + count);
+//                 returnn false;
+//             }
+//             return false;
+//         }
+
+        
+//         public String toString() {
+//             if (wurzel == null) return "{}";
+//             String out = "";
+//             Queue<Node<T>> queue = new Queue<>();
+//             Node<T> node = null;
+//             queue.offer(wurzel);
+//             while (!queue.isEmpty()) {
+//             // Dequeue next node for comparison:
+//             node = queue.poll();
+//             out += node + " ";
+//             // Enqueue children
+//             if (node.links != null) {
+//                 queue.offer(node.links);
+//             }
+//             if (node.rechts != null) {
+//                 queue.offer(node.rechts);
+//             }
+//         }
+//         return out;
+//         }
+//         public static void main(String args[]) {
+//             BinaererSuchbaum<String> baum = new BinaererSuchbaum<>();
+//             baum.einsortieren("Da");
+//             baum.einsortieren("steh");
+//             baum.einsortieren("ich");
+//             baum.einsortieren("nun");
+//             baum.einsortieren("ich");
+//             baum.einsortieren("armer");
+//             baum.einsortieren("Tor");
+//             System.out.println(baum.contains("nun"));
+//         }
+//     }
